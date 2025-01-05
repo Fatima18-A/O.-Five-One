@@ -22,7 +22,7 @@ int minnum(const int array[]){
 int Cprime(const int array[]){
 	int f=(sizeof(array)/ sizeof(array[0]))-1;
 	int count=0;
-	for(int i=0;i<=f;i++){
+	for(int i=array[0];i<=array[f];i++){
 	if(int j=2;j<=i;j++){
 		if(i%j==0&& i!=2)
 		break;
@@ -35,7 +35,7 @@ int Cprime(const int array[]){
 int Cpalindrome(const int array[]){
 	int f=(sizeof(array)/ sizeof(array[0]))-1;
 	int rev=0,c=0;
-	for(int i=0;i<=f;i++){
+	for(int i=array[0];i<=array[f];i++){
 		int numb=i;
 		while(i!=0) {
 			rev= rev*10+i%10;
@@ -60,7 +60,7 @@ int Cpalindrome(const int array[]){
   int max(const int array[]){
   	int maxdi=0, maxn=0;
   		int f=(sizeof(array)/ sizeof(array[0]))-1;
-  		for(int i=0;i<=f;i++){
+  		for(int i=array[0];i<=array[f];i++){
 		  	int cdiv=0;
 		  	for(int j=1;j<=i;j++){
 	  			if (i%j==0)
