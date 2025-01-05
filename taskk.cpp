@@ -2,11 +2,11 @@
 #include<algorithm>
 #include<cmath>
 using namespace std;
-int maxnum(int array[]){
+int maxnum(const int array[]){
 	int f=(sizeof(array)/ sizeof(array[0]))-1;
  return *max_element(array[0],(array [f]));
 }
-int minnum(int array[]){
+int minnum(const int array[]){
 	int f=(sizeof(array)/ sizeof(array[0]))-1;
  return *min_element(array[0],(array [f]));	
 }
@@ -19,7 +19,7 @@ int minnum(int array[]){
 	}
 	return true;*/
 }
-int Cprime(int array[]){
+int Cprime(const int array[]){
 	int f=(sizeof(array)/ sizeof(array[0]))-1;
 	int count=0;
 	for(int i=0;i<=f;i++){
@@ -32,7 +32,7 @@ int Cprime(int array[]){
 	}
 	return count ;
 }
-int Cpalindrome(int array[]){
+int Cpalindrome(const int array[]){
 	int f=(sizeof(array)/ sizeof(array[0]))-1;
 	int rev=0,c=0;
 	for(int i=0;i<=f;i++){
@@ -57,7 +57,7 @@ int Cpalindrome(int array[]){
   	cout<<"The number that has the maximum numder of divisors : "<<max()<<endl;
   	
   }
-  int max(int array[]){
+  int max(const int array[]){
   	int maxdi=0, maxn=0;
   		int f=(sizeof(array)/ sizeof(array[0]))-1;
   		for(int i=0;i<=f;i++){
